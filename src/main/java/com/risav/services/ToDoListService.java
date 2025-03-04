@@ -51,4 +51,10 @@ public class ToDoListService implements ToDoListServicesAcessInterface {
     return data.addToList(newtask);
   }
 
+
+  @Override
+  public List<ToDoListModel> getByDescription(String searchText) {
+    return data.getByDescription(searchText);
+  }
+
 }

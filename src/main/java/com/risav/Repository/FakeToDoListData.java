@@ -63,4 +63,10 @@ public class FakeToDoListData implements ToDoListRepositoryInterface {
     System.out.println("Destroy Method Called.");
   }
 
+  @Override
+  public List<ToDoListModel> getByDescription(String Title) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getByDescription'");
+  }
+
 }

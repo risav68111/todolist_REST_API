@@ -9,7 +9,7 @@ import com.risav.Repository.ToDoListRepositoryInterface;
 @Configuration
 public class SpringConfig {
 
-  @Bean(name="todolistRepository" ,initMethod="init", destroyMethod="destroy") 
+  @Bean(name="todolistRepository" ,initMethod="init", destroyMethod="destroy")  
   public ToDoListRepositoryInterface tododataRepo() {
     return new ToDoListData();
   }
