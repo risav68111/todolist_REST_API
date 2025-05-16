@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
-@RequestMapping("/api/v1/todolist")
+@RequestMapping("/api/v1/tasks")
 public class ToDoListController {
 
   @Autowired
@@ -45,6 +45,12 @@ public class ToDoListController {
   @PutMapping("/update/{id}")
   public ToDoListModel updateTask(@PathVariable("id") int id, @RequestBody ToDoListModel updatedata) {
     return service.updateTask(id, updatedata);
+  }
+
+
+  @PutMapping("/delete/{id}")
+  public ToDoListModel deleteTask(@PathVariable("id") int id) {
+    return service.deleteTask(id );
   }
 
 }
