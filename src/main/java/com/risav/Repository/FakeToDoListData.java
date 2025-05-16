@@ -18,8 +18,7 @@ public class FakeToDoListData implements ToDoListRepositoryInterface {
     result.add(new ToDoListModel(0, "Title ", "descriipton ", false));
     result.add(new ToDoListModel(1, "Title 1", "descriipton 1", true));
     result.add(new ToDoListModel(2, "Title 2", "descriipton 2", false));
-    return result;
-  }
+    return result; }
 
   @Override
   public ToDoListModel getById(int id) {
@@ -28,13 +27,11 @@ public class FakeToDoListData implements ToDoListRepositoryInterface {
 
   @Override
   public List<ToDoListModel> getByTitle(String Title) {
-    // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'getByTitle'");
   }
 
   @Override
   public ToDoListModel updateTask(int id, ToDoListModel updatedata) {
-    // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'updateTask'");
   }
 
@@ -65,7 +62,6 @@ public class FakeToDoListData implements ToDoListRepositoryInterface {
 
   @Override
   public List<ToDoListModel> getByDescription(String Title) {
-    // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'getByDescription'");
   }
 

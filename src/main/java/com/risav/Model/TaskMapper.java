@@ -18,5 +18,4 @@ public class TaskMapper implements RowMapper<ToDoListModel> {
       rs.getString("description"), 
       rs.getBoolean("completed"));
   }
-  
 }
